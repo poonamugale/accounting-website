@@ -1,0 +1,12 @@
+First we need to push code on git hub usinf below comments:
+
+{echo "# h" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/PoonamUgale/h.git
+git push -u origin main}
+
+Add NPM into ths project
+Steps: npm init
