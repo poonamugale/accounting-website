@@ -10,3 +10,15 @@ git push -u origin main}
 
 Add NPM into ths project
 Steps: npm init
+
+Most imp package is :bundler
+Bndlers : 1)webpack 2)Vite 2)parcel and meny more
+bundler is used to bundl our app so it can be shift to production.
+Insatll parcel: npm install -D parcel
+
+Q.-D means what?
+Ans:Two types of dependency the Dev dependency and Normal Dependency
+ Dev dependency means required development phase
+ Normal dependency used in Production
+
+ 
