@@ -1,0 +1,72 @@
+.body-container {
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 4px 0;
+  height: auto;
+  margin-bottom: 10px;
+  /* position: fixed; */
+  margin: 20px;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+
+  border: 1px solid black;
+  z-index: 10;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  background-size: cover;
+
+  transition-property: transform;
+  box-sizing: content-box;
+}
+.sliding-images {
+  width: 100%;
+  min-height: 100vh;
+  /* background-size: cover;
+  overflow: hidden;
+
+  margin-bottom: 30px !important; */
+}
+.slider-image {
+  width: 100%;
+  display: block;
+
+  transition: opacity 1s ease-in-out;
+}
+
+.radio-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.radio-buttons label {
+  margin: 0 5px;
+}
+
+.radio-buttons input {
+  display: none;
+}
+
+.radio-buttons .radio-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.radio-buttons input:checked + .radio-dot {
+  background-color: red;
+}
