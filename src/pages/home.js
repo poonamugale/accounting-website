@@ -8,6 +8,7 @@ import Section2 from "../Components/section2";
 import Section3 from "../Components/section3";
 import Footer from "../Components/footer";
 import { useState, useEffect } from "react";
+// import "./Home.json";
 import "./home.css";
 
 const slidesData = [

@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState, useEffect } from "react";
-import About from "./pages/about";
-import Home from "./pages/home";
-import Body from "./Components/body";
-import Navbar from "./Components/head";
-import LaunchButton from "./pages/launch";
+import About from "./src/pages/about";
+import Home from "./src/pages/home";
+import Body from "./src/Components/body";
+import Navbar from "./src/Components/head";
+import LaunchButton from "./src/pages/launch";
 import "/index.css";
 import { Routes, Route } from "react-router-dom";
 
