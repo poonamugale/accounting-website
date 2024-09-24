@@ -5,13 +5,13 @@ import ReactDOM from "react-dom/client";
 import { useState, useEffect } from "react";
 import { CiLinkedin, CiFacebook } from "react-icons/ci";
 import React from "react";
-import port from "../../port.json";
+import home from "../../home.json";
 import "./footer.css";
 
-function Footer() {
+const Footer = () => {
   const [footerData, setFooterData] = useState({});
   useEffect(() => {
-    setFooterData(port.footer);
+    setFooterData(home.footer);
   }, []);
 
   return (
@@ -84,6 +84,6 @@ function Footer() {
       </div>
     </>
   );
-}
+};
 
 export default Footer;

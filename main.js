@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 import { useState, useEffect } from "react";
 import About from "./src/pages/about";
 import Home from "./src/pages/home";
-import Navbar from "./src/Components/head";
+import Navbar from "./src/Components/navbar";
 import LaunchButton from "./src/pages/launch";
 import "/index.css";
+import Footer from "./src/Components/footer";
 import { Routes, Route } from "react-router-dom";
 
 // const Main = () => {
@@ -34,6 +35,7 @@ const Main = () => {
             <>
               <Navbar />
               <Home />
+              <Footer />
             </>
           }
         />
@@ -44,9 +46,11 @@ const Main = () => {
               <Navbar />
 
               <About />
+              <Footer />
             </>
           }
         />
+        {/* <Route path="/footer" element={<Footer />} /> */}
       </Routes>
     </>
   );

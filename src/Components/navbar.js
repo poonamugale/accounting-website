@@ -8,7 +8,7 @@ import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
-import "./head.css";
+import "./navbar.css";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
