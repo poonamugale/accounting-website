@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { useState, useEffect } from "react";
 import About from "./src/pages/about";
 import Home from "./src/pages/home";
-import Body from "./src/Components/body";
 import Navbar from "./src/Components/head";
 import LaunchButton from "./src/pages/launch";
 import "/index.css";
@@ -27,6 +26,7 @@ const Main = () => {
   return (
     <>
       <Routes>
+        {/* <Navbar /> */}
         <Route path="/launch" element={<LaunchButton />} />
         <Route
           path="/"
@@ -37,7 +37,16 @@ const Main = () => {
             </>
           }
         />
-        <Route path="/About" element={<About />} />
+        <Route
+          path="/About"
+          element={
+            <>
+              <Navbar />
+
+              <About />
+            </>
+          }
+        />
       </Routes>
     </>
   );

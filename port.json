@@ -1,0 +1,75 @@
+{
+  "stats": [
+    { "value": "6", "label": "Decades of Experience" },
+    { "value": "35 +", "label": "Partners" },
+    { "value": "30 +", "label": "Industry Reach" },
+    { "value": "7 +", "label": "Regional Offices in India" },
+    { "value": "900 +", "label": "Employees" },
+    { "value": "15 +", "label": "Countries Worked in" }
+  ],
+  "image": "https://images.inc.com/uploaded_files/image/1920x1080/getty_637367232_405067.jpg",
+  "paragraph": "Kirtane & Pandit is an Accounting, Auditing & Consulting firm with a well-established network of financial experts across India. Our motto 'Step ahead, Always', reflects our value-added approach in delivering sound financial solutions while we partner with you in your journey of growth. With our extensive experience of 65+ years, we deliver a wide range of professional services in the areas of Assurance, Accounting & Advisory to reputed & listed companies from various industries across the globe.",
+  "heading": "Delivering Quality Assurance and Financial Solutions since 1956",
+
+  "header": {
+    "title": "Why Kirtane & Pandit?",
+    "paragraph": "Kirtane & Pandit are committed to establishing and nurturing long-term relationships that illustrate our experience and aptitude of years to assist our clients to accomplish real attainment.",
+    "buttonText": "Learn More",
+    "buttonLink": "#learn-more"
+  },
+
+  "sections": [
+    {
+      "title": "Tailor-Made Approach",
+      "description": "Our accredited partners and dedicated staff bring professionalism and specialization to cater to each client’s unique needs. With a focus on personalized service, we surpass expectations by infusing integrity and delivering customized solutions.",
+      "icon": "AiOutlineSolution"
+    },
+    {
+      "title": "Ethical Practices",
+      "description": "Our firm with an unwavering commitment to ethics, upholding high values in every aspect of our work. We consistently exceed client expectations while maintaining integrity as our guiding principle.",
+      "icon": "AiOutlineSafety"
+    },
+    {
+      "title": "Partnering Growth",
+      "description": "Kirtane & Pandit, spanning across territories, approaches every endeavor with the same standard of enthusiasm, integrity, and ethical practices. We forge partnerships that foster growth, leveraging expertise with a global perspective.",
+      "icon": "AiOutlineTeam"
+    },
+    {
+      "title": "Robust Frameworks",
+      "description": "Professionalism is at the core of Kirtane & Pandit’s promise, ensuring strong practices in all our professional engagements. Our sincere team works tirelessly for the betterment of our clients.",
+      "icon": "AiFillSetting"
+    },
+    {
+      "title": "Global Perspective",
+      "description": "With Kirtane & Pandit, clients benefit from our global perspective and exposure to diverse industries. We bring new experiences and insights, working within timelines to provide the best results.",
+      "icon": "AiOutlineGlobal"
+    }
+  ],
+
+  "services": [
+    {
+      "title": "Attest & Assurance",
+      "description": "Assuring accuracy and reliability of financial statements through independent examination and verification."
+    },
+    {
+      "title": "IND - AS, I GAAP, IFRS Advisory",
+      "description": "Expert guidance on international accounting standards to ensure compliance and seamless financial reporting."
+    },
+    {
+      "title": "Internal Audit & Risk Management",
+      "description": "Evaluating internal controls, identifying risks, and implementing effective risk management strategies."
+    },
+    {
+      "title": "IFC Advisory",
+      "description": "Assisting with the implementation and optimization of Internal Financial Controls to enhance governance and mitigate financial risks."
+    }
+  ],
+
+  "footer": {
+    "mainHeader": "KIRTANE & PANDIT LLP",
+    "subHeader": "Chartered Accountants",
+    "description": "Kirtane & Pandit LLP Chartered Accountants is an Accounting, Auditing & Consulting firm with a well-established network of financial experts across India.",
+    "imageSrc": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoGssPCpuIeQO8TM2LYJllkjZMcXcioEYnITiwDCsDQjHQF3v0",
+    "cpyright": "© 1956 - 2024. Kirtane & Pandit LLP Chartered Accountants | All rights reserved. Design & Developed by YCS TechSoft Pvt. Ltd."
+  }
+}

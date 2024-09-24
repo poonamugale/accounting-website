@@ -1,28 +1,32 @@
 import React from "react";
 import ReactDom from "react-dom/client";
 import { Link } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import { useState, useEffect } from "react";
 import { CiLinkedin, CiFacebook } from "react-icons/ci";
 import React from "react";
+import port from "../../port.json";
 import "./footer.css";
+
 function Footer() {
+  const [footerData, setFooterData] = useState({});
+  useEffect(() => {
+    setFooterData(port.footer);
+  }, []);
+
   return (
     <>
       <footer className="footer">
         <div className="footer-section">
-          <h2>KIRTANE & PANDIT LLP</h2>
-          <p>Chartered Accountants</p>
-          <p>
-            Kirtane & Pandit LLP Chartered Accountants, Chartered Accountants is
-            an Accounting, Auditing & Consulting firm with a well-established
-            network of financial experts across India.
-          </p>
+          <h2>{footerData.mainHeader}</h2>
+          <p>{footerData.subHeader}</p>
+          <p>{footerData.description}</p>
           <div className="social-links">
             <a href="https://linkedin.com">
               <i className="icons">
                 <CiLinkedin size={30} />
               </i>
             </a>
-
             <a href="https://facebook.com">
               <i className="icons">
                 <CiFacebook size={30} />
@@ -30,6 +34,7 @@ function Footer() {
             </a>
           </div>
         </div>
+
         <div className="footer-section">
           <h2>Quick Links</h2>
           <ul>
@@ -50,6 +55,7 @@ function Footer() {
             </li>
           </ul>
         </div>
+
         <div className="footer-section">
           <h2>Services</h2>
           <ul>
@@ -67,30 +73,17 @@ function Footer() {
             </li>
           </ul>
         </div>
+
         <div className="footer-section">
-          <img
-            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoGssPCpuIeQO8TM2LYJllkjZMcXcioEYnITiwDCsDQjHQF3v0"
-            alt="Locations in India"
-          />
+          <img src={footerData.imageSrc} alt="Locations in India" />{" "}
         </div>
       </footer>
+
       <div className="footer2">
-        <p>
-          © 1956 - 2024. Kirtane & Pandit LLP Chartered Accountants | All rights
-          reserved. Design & Developed by YCS TechSoft Pvt. Ltd.
-        </p>
+        <p>{footerData.copyright}</p>
       </div>
     </>
   );
 }
-
-//         <img
-//           src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoGssPCpuIeQO8TM2LYJllkjZMcXcioEYnITiwDCsDQjHQF3v0"
-//           alt="Locations in India"
-//         />
-//       </div>
-//     </footer>
-//   );
-// };
 
 export default Footer;
