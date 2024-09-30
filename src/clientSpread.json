@@ -1,0 +1,22 @@
+{
+  "Data": [
+    { "name": "Construction", "icon": "FaIndustry" },
+    { "name": "Trading", "icon": "FaTruck" },
+    { "name": "Biotech", "icon": "FaMicroscope" },
+    { "name": "Agri Trading", "icon": "FaLeaf" },
+    { "name": "Surgical Equipments", "icon": "FaBriefcaseMedical" },
+    { "name": "Paints & Chemicals", "icon": "FaPaintBrush" },
+    { "name": "Real Estate Developer", "icon": "FaBuilding" },
+    { "name": "Mould & Moulding Parts", "icon": "FaTools" },
+    { "name": "Auto Components", "icon": "FaWrench" },
+    { "name": "Hospitality", "icon": "FaConciergeBell" },
+    { "name": "Auto Ancillary", "icon": "FaClipboardList" },
+    { "name": "Transport & Logistics", "icon": "FaTruckLoading" },
+    { "name": "Dairy", "icon": "FaUtensils" },
+    { "name": "Ready To Cook", "icon": "FaUtensils" }
+  ],
+  "Header": {
+    "heading": "Clients Spread",
+    "paragraph": " Kirtane & Pandit is a versatile professional services firm, offering a wide range of financial, legal, and advisory solutions to break do barriers so that our team can focus on what matters. With our expertise in diverse industries, we provide comprehensive and tailored services while working together with our clients to create products their customers love"
+  }
+}

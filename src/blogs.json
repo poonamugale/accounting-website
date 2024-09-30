@@ -1,0 +1,48 @@
+{
+  "data": {
+    "heading": "Embracing Practice Domains for Building Powerful Institutions!",
+    "paragraph": "'Welcome to our Blog Section, where we share valuable insights,expert opinions, and the latest updates from the world of varied business sectors. As trusted professionals in the financial realm,Through our engaging and informative blog posts, we aim to provide you with various essential aspects of the industry and business landscape. Whether you are a business owner, a finance professional, or simply curious about financial matters, our blog is your go-to resource for staying informed about the latest industrial topics. Feel free to like and comment with your views.Happy reading!",
+    "imageUrl": "https://www.romerolaw.com/wp-content/uploads/2022/06/FAIR-EMPLOYMENT-AND-HOUSING-ACT.jpg"
+  },
+
+  "articles": [
+    {
+      "id": "1",
+      "image": "https://www.kirtanepandit.com/assets/imgs/blogs/1725510135.How%20market%20condition%20affect%20business%20valuation.jpg",
+      "title": "How Market Conditions Affect Business Valuation",
+      "date": "05 Sep 2024",
+      "category": "Knowledge Management",
+      "content": [
+        {
+          "heading": "Introduction",
+          "paragraph": "This is an introductory paragraph about market conditions and business valuation."
+        },
+        {
+          "heading": "Impact of Market Trends",
+          "paragraph": "Market trends play a critical role in determining business valuation. The shifts in market demand can either increase or decrease the valuation depending on various factors."
+        },
+        {
+          "heading": "Conclusion",
+          "paragraph": "In conclusion, market conditions are one of the many factors that affect business valuation, and staying ahead of market trends is crucial for maintaining a competitive edge."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "image": "https://www.kirtanepandit.com/assets/imgs/blogs/1722584777.July%20Blog%20post%201_Keyinsights.jpg",
+      "title": "Navigating the Post-Budget Economy",
+      "date": "02 Aug 2024",
+      "category": "Knowledge Management",
+      "content": [
+        {
+          "heading": "Overview",
+          "paragraph": "This article discusses how businesses can navigate economic challenges post-budget announcements."
+        },
+        {
+          "heading": "Strategies to Consider",
+          "paragraph": "Adapting to the new regulations and policy changes is crucial in the post-budget economy."
+        }
+      ]
+    }
+  ]
+}

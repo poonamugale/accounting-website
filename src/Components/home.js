@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Navbar from "../Components/navbar";
+import Navbar from "./navbar";
 import React from "react";
-import ReactDOM from "react-dom/client";
 import home from "../../home.json";
-// import Footer from "../Components/footer";
+import { Link } from "react-router-dom";
+import { FiCheckCircle } from "react-icons/fi";
 import {
   AiFillSetting,
   AiOutlineGlobal,
@@ -24,7 +24,7 @@ const slidesData = [
   {
     title: "Driving Business Growth",
     text: "By understanding our clients' unique business needs, we can offer valuable advice, proactive planning, and innovative ideas that contribute directly to their growth, profitability, and long-term prosperity.",
-    img: "https://www.burohappold.com/wp-content/uploads/2020/02/experts-in-tall-buildings-burohappold_getty.jpg",
+    img: "https://www.redtechgroup.com/it-project-management/wp-content/uploads/sites/4/2014/11/our-services-background.jpg",
   },
   {
     title: "Tailored Financial Solutions",
@@ -178,9 +178,9 @@ const Section1 = () => {
           <span className="home-label">About Kirtane & Pandit</span>
           <h2>{heading}</h2>
           <p>{paragraph}</p>
-          <button className="learn-more-btn">
+          <a className="learn-more-btn" href="/about">
             Learn More <span className="arrow">→</span>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -202,6 +202,7 @@ const Section1 = () => {
     </div>
   );
 };
+
 const Section2 = () => {
   const [header, setHeader] = useState({});
   const [sections, setSections] = useState([]);
@@ -249,64 +250,30 @@ const Section2 = () => {
   );
 };
 const Section3 = () => {
-  const [showButton, setShowButton] = useState(false);
-
-  const [services, setServices] = useState([]);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-    setServices(home.services);
-  };
+  const [visibleServices, setVisibleServices] = useState([]);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-    setServices(home.services);
+    setVisibleServices(home.services.slice(0, 3));
   }, []);
 
   return (
     <div className="Section3">
       <h2 className="services-heading">Our Services</h2>
-      <div className="services-cards">
-        {(() => {
-          const serviceCards = [];
-          for (let i = 0; i < services.length; i++) {
-            const service = services[i];
-            serviceCards.push(
-              <div key={i} className="service-card">
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-
-                <a href="#" className="learn-more">
-                  Learn More &rarr;
-                </a>
-              </div>
-            );
-          }
-          return serviceCards;
-        })()}
+      <div className="services-page">
+        {visibleServices.map((service) => (
+          <div key={service.title} className="service-card">
+            <h2>{service.title}</h2>
+            <p>{service.description}</p>
+            <Link to={`/service/${service.title}`} className="learn-more-btn">
+              Learn More
+            </Link>
+          </div>
+        ))}
       </div>
-
-      {showButton && (
-        <button className="scroll-to-top" onClick={scrollToTop}>
-          &#8679;
-        </button>
-      )}
+      <Link to="/all-services" className="view-all-btn">
+        View All Services
+      </Link>
     </div>
   );
 };

@@ -1,14 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState, useEffect } from "react";
-import About from "./src/pages/about";
-import Home from "./src/pages/home";
+import About from "./src/Components/about";
+import Home from "./src/Components/home";
 import Navbar from "./src/Components/navbar";
 import LaunchButton from "./src/pages/launch";
 import "/index.css";
+import ClientSpread from "./src/pages/client-spread";
 import Footer from "./src/Components/footer";
 import { Routes, Route } from "react-router-dom";
-
+import Blogs from "./src/pages/blogs";
+import Article from "./src/pages/articles";
+import ArticleDetail from "./src/pages/articleDetail";
+import Section3 from "./src/Components/home";
+import ServiceDetail from "./src/pages/serviceDetail";
+import AllServices from "./src/pages/allServices";
 // const Main = () => {
 //   return (
 //     <>
@@ -40,17 +46,42 @@ const Main = () => {
           }
         />
         <Route
-          path="/About"
+          path="/about"
           element={
             <>
               <Navbar />
 
               <About />
+
               <Footer />
             </>
           }
         />
-        {/* <Route path="/footer" element={<Footer />} /> */}
+        <Route
+          path="/clientSpread"
+          element={
+            <>
+              <Navbar />
+              <ClientSpread />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/blogs"
+          element={
+            <>
+              <Navbar />
+              <Blogs />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/service/:title" element={<ServiceDetail />} />
+        <Route path="/all-services" element={<AllServices />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route exact path="/articles" component={<Article />} />
+        <Route path="/articles/:id" element={<ArticleDetail />} />
       </Routes>
     </>
   );

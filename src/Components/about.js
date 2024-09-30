@@ -57,7 +57,7 @@ const Section1 = () => {
           <img src={imageUrl1} alt="Assurance & Solutions" />
         </div>
         <div className="hightlight-content">
-          <span className="about-label">Highlights</span>
+          <span className="highlight-label">Highlights</span>
           <h2>{pageheading}</h2>
           <ul className="highlights-list">
             {(() => {
@@ -84,76 +84,59 @@ const Section1 = () => {
   );
 };
 const Section2 = () => {
+  const [vision, setVision] = useState("");
+  const [mission, setMission] = useState([]);
+
+  useEffect(() => {
+    setVision(about.vision);
+    setMission(about.mission);
+  }, []);
+
   return (
     <div className="about-container">
       <div className="about-vision">
         <h2>Vision</h2>
-        <p>
-          To be a Leading Professional Services Firm engaged in the field of
-          Accounting, Auditing & Consulting, by focusing on Efficient Client
-          Service, Deep Professional Expertise & High Ethical Standards.
-        </p>
+        <p>{vision}</p>
       </div>
 
       <div className="about-mission">
         <h2>Mission</h2>
         <div className="mission-items">
           <div className="mission-column">
-            <div className="mission-item">
-              <div className="mission-icon">&#10003;</div>
-              <div>
-                <h3>Partnering Growth</h3>
-                <p>
-                  With reliability, we empower our clients to unlock significant
-                  business value by fostering mutually beneficial, long-term
-                  partnerships.
-                </p>
-              </div>
-            </div>
-            <div className="mission-item">
-              <div className="mission-icon">&#10003;</div>
-              <div>
-                <h3>Excellence with Expertise & Technology</h3>
-                <p>
-                  With over six decades of experience, we deliver comprehensive
-                  solutions by combining an in-depth knowledge base with
-                  innovative techniques.
-                </p>
-              </div>
-            </div>
-            <div className="mission-item">
-              <div className="mission-icon">&#10003;</div>
-              <div>
-                <h3>Building an Institution</h3>
-                <p>
-                  We are focused on building a sustainable and long-term
-                  institution by ensuring the continuity of exceptional services
-                  and expertise.
-                </p>
-              </div>
-            </div>
+            {(() => {
+              const items = [];
+              for (let i = 0; i < 3 && i < mission.length; i++) {
+                const item = mission[i];
+                items.push(
+                  <div className="mission-item" key={i}>
+                    <div className="mission-icon">&#10003;</div>
+                    <div>
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                    </div>
+                  </div>
+                );
+              }
+              return items;
+            })()}
           </div>
           <div className="mission-column">
-            <div className="mission-item">
-              <div className="mission-icon">&#10003;</div>
-              <div>
-                <h3>Global Reach with Local Strength</h3>
-                <p>
-                  We offer global reach with local strength, serving clients
-                  seamlessly across the globe.
-                </p>
-              </div>
-            </div>
-            <div className="mission-item">
-              <div className="mission-icon">&#10003;</div>
-              <div>
-                <h3>Honest & Ethical Practices</h3>
-                <p>
-                  We uphold strong ethics, ensuring honest and ethical practices
-                  that build trust and foster long-term relationships.
-                </p>
-              </div>
-            </div>
+            {(() => {
+              const items = [];
+              for (let i = 3; i < mission.length; i++) {
+                const item = mission[i];
+                items.push(
+                  <div className="mission-item" key={i}>
+                    <div className="mission-icon">&#10003;</div>
+                    <div>
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                    </div>
+                  </div>
+                );
+              }
+              return items;
+            })()}
           </div>
         </div>
       </div>
@@ -161,9 +144,15 @@ const Section2 = () => {
   );
 };
 const Section3 = () => {
+  const [statsList, setStatsList] = useState("");
+  useEffect(() => {
+    setStatsList(about.statsList);
+  }, []);
   return (
-    <div className="stats-section">
-      <h1>A Step Ahead, Always.</h1>
+    <div className="statsList">
+      <div className="stats-heading">
+        <h1>{statsList}</h1>
+      </div>
     </div>
   );
 };

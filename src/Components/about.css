@@ -75,7 +75,7 @@ p {
   height: 500px;
   margin-bottom: 20px;
 }
-/* .hightlight-label {
+.hightlight-label {
   display: inline-block;
   background-color: #367dfd;
   color: white;
@@ -83,7 +83,7 @@ p {
   border-radius: 20px;
   font-size: 14px;
   margin-bottom: 20px;
-} */
+}
 
 .hightlight-content {
   flex: 1;
@@ -147,10 +147,10 @@ p {
   color: #333;
 }
 
-.about-vision,
+/* .about-vision,
 .about-mission {
   padding: 20px;
-}
+} */
 
 .about-vision {
   background-color: #f9f9f9;
@@ -170,14 +170,14 @@ p {
 
 /* CSS for Mission Section */
 .mission-items {
-  display: flex; /* Use flexbox to create two columns */
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 100%;
 }
 
 .mission-column {
-  width: 48%;
+  width: 50%;
 }
 
 .mission-item {
@@ -205,7 +205,7 @@ p {
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-container {
-    padding: 5px;
+    padding: 20px;
   }
   .mission-items {
     flex-direction: column;
@@ -215,14 +215,20 @@ p {
     width: 100%;
   }
 }
-.stats-section {
-  background-color: #007aff;
-
-  border-radius: 10px;
+.statsList {
+  padding: 60px;
 }
-.stats-section > h1 {
+.stats-heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(28, 28, 115);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.stats-heading > h1 {
   color: white;
   font-size: 2rem;
+  padding: 40px;
 }
 
 /* Responsive Design */

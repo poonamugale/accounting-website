@@ -24,5 +24,30 @@
     "Empanelled with Official Liquidators, High Court, Mumbai",
     "Empanelled with the Government of Maharashtra, Home Dept. as Forensic Auditor",
     "ESG and sustainability advisory and reporting- Representation on Sustainability Reporting Standards Board of the ICAI"
-  ]
+  ],
+
+  "vision": "To be a Leading Professional Services Firm engaged in the field of Accounting, Auditing & Consulting, by focusing on Efficient Client Service, Deep Professional Expertise & High Ethical Standards.",
+  "mission": [
+    {
+      "title": "Partnering Growth",
+      "description": "With reliability, we empower our clients to unlock significant business value by fostering mutually beneficial, long-term partnerships."
+    },
+    {
+      "title": "Excellence with Expertise & Technology",
+      "description": "With over six decades of experience, we deliver comprehensive solutions by combining an in-depth knowledge base with innovative techniques."
+    },
+    {
+      "title": "Building an Institution",
+      "description": "We are focused on building a sustainable and long-term institution by ensuring the continuity of exceptional services and expertise."
+    },
+    {
+      "title": "Global Reach with Local Strength",
+      "description": "We offer global reach with local strength, serving clients seamlessly across the globe."
+    },
+    {
+      "title": "Honest & Ethical Practices",
+      "description": "We uphold strong ethics, ensuring honest and ethical practices that build trust and foster long-term relationships."
+    }
+  ],
+  "statsList": "A Step Ahead, Always."
 }

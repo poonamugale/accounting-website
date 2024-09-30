@@ -48,20 +48,40 @@
 
   "services": [
     {
-      "title": "Attest & Assurance",
-      "description": "Assuring accuracy and reliability of financial statements through independent examination and verification."
+      "title": "Auditing & Assurance Services",
+      "description": "We provide various Auditing & Assurance Services to Companies and Firms.",
+      "largeParagraph": "Our Auditing & Assurance Services include verification of evidences, vouchers, and certifications. We help companies maintain compliance through detailed audits and documentation.",
+      "images": ["/images/audit1.jpg", "/images/audit2.jpg"]
     },
     {
-      "title": "IND - AS, I GAAP, IFRS Advisory",
-      "description": "Expert guidance on international accounting standards to ensure compliance and seamless financial reporting."
+      "title": "Outsourcing, Accounting & Payroll Processing",
+      "description": "Outsourcing helps companies to focus on core activities and achieve high compliance.",
+      "largeParagraph": "We provide a comprehensive range of outsourcing services that include accounting, payroll processing, and QuickBooks management to help businesses maintain operational efficiency.",
+      "images": ["/images/payroll1.jpg", "/images/payroll2.jpg"]
     },
     {
-      "title": "Internal Audit & Risk Management",
-      "description": "Evaluating internal controls, identifying risks, and implementing effective risk management strategies."
+      "title": "Income Tax Advisory",
+      "description": "We provide income tax advice to companies and non-companies clients.",
+      "largeParagraph": "Our Income Tax Advisory service helps clients optimize their tax strategies. We provide expert advice on income tax compliance for businesses as well as individuals.",
+      "images": ["/images/tax1.jpg", "/images/tax2.jpg"]
     },
     {
-      "title": "IFC Advisory",
-      "description": "Assisting with the implementation and optimization of Internal Financial Controls to enhance governance and mitigate financial risks."
+      "title": "Virtual CFO Services",
+      "description": "Fast-growing businesses need dynamic support in financial decisions.",
+      "largeParagraph": "Our Virtual CFO Services provide expert financial advice and oversight to businesses that need CFO-level guidance without hiring full-time CFO staff.",
+      "images": ["/images/cfo1.jpg", "/images/cfo2.jpg"]
+    },
+    {
+      "title": "Indian GAAPs, IND-AS & IFRS Advisory Services",
+      "description": "We assist businesses in implementing IFRS and Indian GAAPs.",
+      "largeParagraph": "Our services help companies comply with the complex landscape of Indian GAAPs, IND-AS, and IFRS. We provide expert advisory for financial reporting and corporate governance.",
+      "images": ["/images/gaap1.jpg", "/images/gaap2.jpg"]
+    },
+    {
+      "title": "Initial Public Offering (IPO) Advisory & Solutions Services",
+      "description": "We provide advisory for companies aiming for IPO on NSE & BSE.",
+      "largeParagraph": "Our IPO advisory services help businesses prepare for listing on major stock exchanges, providing comprehensive guidance on regulatory requirements and documentation.",
+      "images": ["/images/ipo1.jpg", "/images/ipo2.jpg"]
     }
   ],
 
@@ -71,5 +91,28 @@
     "description": "Kirtane & Pandit LLP Chartered Accountants is an Accounting, Auditing & Consulting firm with a well-established network of financial experts across India.",
     "imageSrc": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoGssPCpuIeQO8TM2LYJllkjZMcXcioEYnITiwDCsDQjHQF3v0",
     "copyright": "© 1956 - 2024. Kirtane & Pandit LLP Chartered Accountants | All rights reserved. Design & Developed by YCS TechSoft Pvt. Ltd."
-  }
+  },
+
+  "section2": [
+    {
+      "ico": "IoMdHand",
+      "titl": "We offer support services",
+      "descriptio": "that can free up management to concentrate on important aspects of their business."
+    },
+    {
+      "ico": "IoIosClipboard",
+      "titl": "We have proven experience",
+      "descriptio": "of managing end to end finance and accounts processes from initial invoicing till payment."
+    },
+    {
+      "ico": "FaRegLightbulb",
+      "titl": "We turn numbers into actionable business intelligence",
+      "descriptio": "- building a better picture offering better finance."
+    },
+    {
+      "ico": "FaRegLightbulb",
+      "titl": "We explore ideas and help you",
+      "descriptio": "plan for a more profitable future wherever you are in your business lifecycle."
+    }
+  ]
 }
