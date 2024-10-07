@@ -8,29 +8,39 @@ import { FiCheckCircle } from "react-icons/fi";
 const ServiceDetail = () => {
   const { title } = useParams();
   const [service, setService] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const selectedService = home.services.find(
       (service) => service.title === title
     );
-    setService(selectedService);
+
+    if (selectedService) {
+      setService(selectedService);
+    } else {
+      setError("Service not found.");
+    }
+    setLoading(false);
   }, [title]);
 
-  if (!service) {
+  if (loading) {
     return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>{error}</p>;
   }
 
   return (
     <div className="service-details">
       <h1>{service.title}</h1>
       <p>{service.largeParagraph}</p>
-
       <div className="service-images">
-        {service.images.map((img, index) => (
-          <img key={index} src={img} alt={`${service.title} ${index + 1}`} />
-        ))}
+        <img src={service.image} alt={service.title} />
       </div>
     </div>
   );
 };
+
 export default ServiceDetail;

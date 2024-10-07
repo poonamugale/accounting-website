@@ -21,7 +21,10 @@ const AllServices = () => {
           >
             <h2>{service.title}</h2>
             <p>{service.description}</p>
-            <Link to={`/service/${service.title}`} className="learn-more-btn">
+            <Link
+              to={`/service/${encodeURIComponent(service.title)}`}
+              className="learn-more-btn"
+            >
               Learn More
             </Link>
           </div>
