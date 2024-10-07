@@ -8,8 +8,10 @@ import "./blogs.css";
 const ArticleDetail = () => {
   const { id } = useParams();
   const [article, setArticle] = useState(null);
+  const [paragraph, setParagraph] = useState("");
 
   useEffect(() => {
+    setParagraph(blogs.paragraph);
     const selectedArticle = blogs.articles.find(
       (article) => article.id === String(id)
     );
@@ -21,30 +23,39 @@ const ArticleDetail = () => {
   }
 
   return (
-    <div className="articleDetaile-container">
-      <div className="breadcrumb">
-        <Link to="/" className="breadcrumb-link">
+    <div className="articleDetail-container">
+      <div className="articleDetail-link">
+        <Link to="/" className="articleDetail-link-home">
           Home
         </Link>{" "}
         &gt;
-        <Link to="/blogs" className="breadcrumb-link">
-          {" "}
+        <Link to="/blogs" className="articleDetail-link-blog">
           Blog
         </Link>{" "}
         &gt;
         <span>{article.title}</span>
       </div>
-      <p className="article-meta">
-        {article.date} • {article.category}
-      </p>
-      <img
-        className="articleDetaile-image"
-        src={article.image}
-        alt={article.title}
-      />
 
+      <div className="article-meta">
+        <p>
+          {article.date} • {article.category}
+        </p>
+      </div>
+      <h1 className="articleDetail-title">{article.title}</h1>
+      <div className="articleDetail-header">
+        <div className="articleDetail-image-container">
+          <img
+            className="articleDetail-image"
+            src={article.image}
+            alt={article.title}
+          />
+          <div className="articleDetail-title-overlay"></div>
+        </div>
+      </div>
+
+      {/* Article Content */}
       {article.content.map((section, index) => (
-        <div className="articleDetaile-content" key={index}>
+        <div className="articleDetail-content" key={index}>
           <h2>{section.heading}</h2>
           <p>{section.paragraph}</p>
         </div>
@@ -52,4 +63,5 @@ const ArticleDetail = () => {
     </div>
   );
 };
+
 export default ArticleDetail;

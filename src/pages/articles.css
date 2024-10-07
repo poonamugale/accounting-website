@@ -88,66 +88,71 @@
 /*Article Details*.............................../
 /* CSS for ArticleDetail Component */
 
-.articleDetaile-container {
-  width: 100%;
+.articleDetail-container {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 100px 60px;
+  padding-top: 90px;
+  font-family: Arial, sans-serif;
 }
 
-.articleDetaile-image {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  position: relative;
-}
-
-.articleDetaile-container h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 36px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  text-align: center;
-}
-
-.articleDetaile-content {
-  margin: 20px 0;
-}
-
-.articleDetaile-content h2 {
-  font-size: 28px;
+.articleDetail-link {
+  font-size: 16px;
+  color: #007bff;
   margin-bottom: 10px;
-  color: #333;
 }
 
-.articleDetaile-content p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 15px;
+.articleDetail-link a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .article-meta {
   font-size: 14px;
-  color: #999;
-  margin-top: 10px;
-  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .articleDetaile-container h1 {
-    font-size: 24px;
-  }
+.article-actions {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
 
-  .articleDetaile-content h2 {
-    font-size: 24px;
-  }
+.articleDetail-header {
+  position: relative;
+  margin-bottom: 20px;
+}
 
-  .articleDetaile-content p {
-    font-size: 16px;
-  }
+.articleDetail-image-container {
+  position: relative;
+}
+
+.articleDetail-image {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.articleDetail-title {
+  color: black;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.articleDetail-content {
+  margin-top: 20px;
+}
+
+.articleDetail-content h2 {
+  font-size: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.articleDetail-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
 }

@@ -258,7 +258,7 @@ const Section3 = () => {
   }, []);
 
   return (
-    <div className="section3-container">
+    <div className="services-container">
       <h2 className="services-heading">Our Services</h2>
       <div className="services-page">
         {visibleServices.map((service) => (
@@ -267,16 +267,20 @@ const Section3 = () => {
             className="service-card"
             style={{ backgroundImage: `url(${service.image})` }}
           >
-            <h2>{service.title}</h2>
             <Link to={`/service/${service.title}`} className="learn-more-btn">
               Learn More
             </Link>
+            <div className="servicescard-header">
+              <h2>{service.title}</h2>
+            </div>
           </div>
         ))}
       </div>
-      <Link to="/all-services" className="view-all-btn">
-        View All Services
-      </Link>
+      <div className="all-services-btn">
+        <Link to="/all-services" className="view-all-btn">
+          View All Services
+        </Link>
+      </div>
     </div>
   );
 };

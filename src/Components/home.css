@@ -547,16 +547,16 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 } */
-.section3-container {
-  padding: 40px;
+.services-container {
+  padding: 60px;
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   position: relative;
 }
 
 .services-heading {
   font-size: 32px;
-  color: white;
+  color: rgb(11, 11, 11);
   margin-bottom: 40px;
 }
 
@@ -568,31 +568,41 @@ p {
 }
 
 .service-card {
-  width: 300px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 400px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 200px;
 }
-
-.service-card:hover {
-  transform: translateY(-10px);
-}
-
 .service-card h2 {
   font-size: 20px;
   color: #333;
-  margin-bottom: 10px;
+  margin: 0;
   position: relative;
   z-index: 2;
 }
 
+.service-card p {
+  color: #444;
+  margin: 5px 0;
+  position: relative;
+  z-index: 2;
+}
+.servicescard-header {
+  /* background-color: rgba(255, 166, 0, 0.6); */
+  background-color: orange;
+  padding: 5px;
+}
 .learn-more-btn {
-  display: inline-block;
+  display: none;
   padding: 10px 20px;
   background-color: rgba(0, 86, 179, 0.8);
   color: white;
@@ -600,13 +610,24 @@ p {
   text-decoration: none;
   font-size: 14px;
   transition: background-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
+}
+
+.service-card:hover .learn-more-btn {
+  display: block;
 }
 
 .learn-more-btn:hover {
   background-color: rgba(0, 86, 179, 1);
 }
 
+.all-services-btn {
+  padding: 6px;
+}
 .view-all-btn {
   display: inline-block;
   margin-top: 20px;
@@ -629,6 +650,7 @@ p {
     margin-bottom: 20px;
   }
 }
+
 .all-services {
   padding: 60px;
 }

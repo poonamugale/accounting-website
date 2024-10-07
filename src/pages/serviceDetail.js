@@ -34,10 +34,9 @@ const ServiceDetail = () => {
 
   return (
     <div className="service-details">
-      <h1>{service.title}</h1>
-      <p>{service.largeParagraph}</p>
       <div className="service-images">
         <img src={service.image} alt={service.title} />
+        <p>{service.description}</p>
       </div>
     </div>
   );
