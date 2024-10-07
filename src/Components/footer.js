@@ -18,7 +18,7 @@ const Footer = () => {
     <>
       <footer className="footer">
         <div className="footer-section">
-          <h2>{footerData.mainHeader}</h2>
+          <h4>{footerData.mainHeader}</h4>
           <p>{footerData.subHeader}</p>
           <p>{footerData.description}</p>
           <div className="social-links">
@@ -36,39 +36,39 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h2>Quick Links</h2>
+          <h4>Quick Links</h4>
           <ul>
-            <li className="hello">
+            <li className="footer-link">
               <Link to="/publications">Publications</Link>
             </li>
-            <li className="hello">
+            <li className="footer-link">
               <Link to="/about">About Us</Link>
             </li>
-            <li className="hello">
+            <li className="footer-link">
               <Link to="/careers">Careers</Link>
             </li>
-            <li className="hello">
+            <li className="footer-link">
               <Link to="/alumni">Alumni</Link>
             </li>
-            <li className="hello">
+            <li className="footer-link">
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
 
         <div className="footer-section">
-          <h2>Services</h2>
+          <h4>Services</h4>
           <ul>
-            <li className="hello">
+            <li className="footer-link">
               <Link to="/Audit & Assurance">Audit & Assurance</Link>
             </li>
-            <li className="hello">
+            <li className="footer-link">
               <Link to="/Tax">Tax</Link>
             </li>
-            <li className="hello">
+            <li className="footer-link">
               <Link to="/BFSI & NBFCs">BFSI & NBFCs</Link>
             </li>
-            <li className="hello">
+            <li className="footer-link">
               <Link to="/Consulting & Advisory">Consulting & Advisory</Link>
             </li>
           </ul>

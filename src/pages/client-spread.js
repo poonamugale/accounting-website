@@ -19,7 +19,7 @@ import {
   FaTruckLoading,
   FaUtensils,
 } from "react-icons/fa";
-import clientSpread from "../clientSpread.json"; // Your JSON file
+import clientSpread from "../clientSpread.json";
 
 const iconMap = {
   FaIndustry: <FaIndustry />,

@@ -18,7 +18,7 @@ import "./home.css";
 const slidesData = [
   {
     title: "Adding Value to your Success",
-    text: "We believe in being a trusted partner who consistently adds value to our clients' endeavors. Our primary objective is to go beyond routine accounting and auditing services by providing strategic insights and tailored financial solutions that enhance our clients' success.",
+    text: "We believe in being a trusted partner who consistently adds value to our clients' endeavors. Our primary objective is to go beyond routine accounting and auditing services by providing strategic insights.",
     img: "https://fmpglobal.com/wp-content/uploads/2022/06/Hiring-International-Employees-1.jpg",
   },
   {
@@ -34,7 +34,7 @@ const slidesData = [
 ];
 
 const Home = () => {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(1); // 1-based index
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
@@ -73,7 +73,7 @@ const Home = () => {
   };
 
   const handleLearnMore = () => {
-    window.location.href = "/learn-more";
+    console.log("Learn More clicked!");
   };
 
   return (
@@ -83,11 +83,12 @@ const Home = () => {
           <div
             className="slides-track"
             style={{
-              transform: `translateX(${-(activeIndex * 100)}%)`,
+              transform: `translateX(${-activeIndex * 100}%)`,
               transition: isTransitioning ? "transform 0.5s ease" : "none",
             }}
             onTransitionEnd={handleTransitionEnd}
           >
+            {/* Cloned Last Slide */}
             <div
               className="slide"
               style={{
@@ -113,6 +114,7 @@ const Home = () => {
                 <div className="content">
                   <h2>{title}</h2>
                   <p>{text}</p>
+                  {/* Learn More Button */}
                   <button className="learn-more" onClick={handleLearnMore}>
                     Learn More →
                   </button>
@@ -146,13 +148,9 @@ const Home = () => {
           ))}
         </div>
       </div>
-
-      {/* Second Section: Image on Left, Text on Right */}
-
       <Section1 />
       <Section2 />
       <Section3 />
-      {/* <Footer /> */}
     </div>
   );
 };
@@ -224,6 +222,8 @@ const Section2 = () => {
     <section className="Section2">
       <div className="header-section">
         <h1>{header.title}</h1>
+        <div className="divider" />
+
         <p>{header.paragraph}</p>
         <a href="#learn-more" className="learn-more-btn">
           Learn More &rarr;
@@ -258,13 +258,16 @@ const Section3 = () => {
   }, []);
 
   return (
-    <div className="Section3">
+    <div className="section3-container">
       <h2 className="services-heading">Our Services</h2>
       <div className="services-page">
         {visibleServices.map((service) => (
-          <div key={service.title} className="service-card">
+          <div
+            key={service.title}
+            className="service-card"
+            style={{ backgroundImage: `url(${service.image})` }}
+          >
             <h2>{service.title}</h2>
-            <p>{service.description}</p>
             <Link to={`/service/${service.title}`} className="learn-more-btn">
               Learn More
             </Link>
@@ -277,5 +280,34 @@ const Section3 = () => {
     </div>
   );
 };
+
+// const Section3 = () => {
+//   const [visibleServices, setVisibleServices] = useState([]);
+//   const [showAll, setShowAll] = useState(false);
+
+//   useEffect(() => {
+//     setVisibleServices(home.services.slice(0, 3));
+//   }, []);
+
+//   return (
+//     <div className="Section3">
+//       <h2 className="services-heading">Our Services</h2>
+//       <div className="services-page">
+//         {visibleServices.map((service) => (
+//           <div key={service.title} className="service-card">
+//             <h2>{service.title}</h2>
+//             <p>{service.description}</p>
+//             <Link to={`/service/${service.title}`} className="learn-more-btn">
+//               Learn More
+//             </Link>
+//           </div>
+//         ))}
+//       </div>
+//       <Link to="/all-services" className="view-all-btn">
+//         View All Services
+//       </Link>
+//     </div>
+//   );
+// };
 
 export default Home;

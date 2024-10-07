@@ -1,7 +1,7 @@
 .client-container {
   width: 100%;
   min-height: 100vh;
-  background-image: url("https://quickbooks.intuit.com/oidam/intuit/sbseg/en_ca/blog/images/add-tax-filing-to-business-qboa-ca-desktop.jpeg"); /* Background image */
+  background-image: url("https://quickbooks.intuit.com/oidam/intuit/sbseg/en_ca/blog/images/add-tax-filing-to-business-qboa-ca-desktop.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -16,7 +16,6 @@
   width: 100%;
   max-width: 1000px;
   background-color: rgba(20, 16, 16, 0.6);
-
   z-index: 2;
 }
 .client-content h1 {

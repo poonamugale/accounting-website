@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import about from "../../about.json";
 import "./about.css";
 
@@ -15,9 +16,22 @@ const About = () => {
 
   return (
     <div className="main-container">
+      <div className="image-container">
+        <img
+          src="https://www.brandreward.com/img/pub_two_pic.jpg"
+          alt="About Us"
+          className="image"
+        />
+        <div className="aboutus-heading">
+          <Link to="/" className="aboutus-heading-link">
+            Home
+          </Link>
+          &gt; About Us
+        </div>
+      </div>
       <div className="about-section">
         <div className="about-container">
-          <span className="about-label">{heading}</span>
+          <h1 className="about-label">{heading}</h1>
           {(() => {
             const paragraphArray = [];
             for (let i = 0; i < paragraphs.length; i++) {

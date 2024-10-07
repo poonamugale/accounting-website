@@ -39,10 +39,8 @@ const Navbar = () => {
 
   const handleRefreshOrNavigate = (path) => {
     if (location.pathname === path) {
-      // If we are already on the target page, force a page reload
       window.location.href = path;
     } else {
-      // Navigate to a different page without refreshing
       navigate(path);
     }
     setIsMobile(false);
@@ -162,19 +160,19 @@ const Navbar = () => {
             </span>
           </li>
         </ul>
+        <div className="header-right">
+          <button
+            className="contact-button"
+            onClick={() => (window.location.href = "/contact")}
+          >
+            Contact
+          </button>
+        </div>
       </div>
 
       {/* Hamburger Menu */}
       <div className="hamburger-menu" onClick={toggleMobileMenu}>
         {isMobile ? <FaTimes /> : <FaBars />}
-      </div>
-      <div className="header-right">
-        <button
-          className="contact-button"
-          onClick={() => (window.location.href = "/contact")}
-        >
-          Contact
-        </button>
       </div>
     </nav>
   );

@@ -1,149 +1,137 @@
 .blog1 {
+  margin-bottom: 20px;
+}
+
+.mainblog-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  position: relative;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  background-color: #acc6f5;
 }
 
 .blog-container {
-  display: flex;
-  flex-direction: row;
+  position: relative;
   width: 100%;
+
+  overflow: hidden;
 }
 
 .blog-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: auto;
-  padding-left: 50px;
-  margin-left: 30px;
-  transform: scale(1);
-  transition: transform 1s ease-in-out;
-}
-
-.blog-image img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  padding-left: 50px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
 }
 
 .blog-content {
-  flex: 1;
-  padding-left: 90px;
-  margin-right: 50%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(103, 97, 97, 0.8);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.blog-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .blog-image {
+    height: 300px;
+  }
+
+  .blog-content {
+    padding: 10px;
+    width: 80%;
+  }
+
+  .blog-content .blog-heading {
+    font-size: 15px;
+  }
+
+  .blog-content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .blog-container {
+    max-width: 95%;
+  }
+
+  .blog-image {
+    height: 250px;
+  }
+
+  .blog-content {
+    padding: 10px;
+    width: 60%;
+  }
+
+  .blog-content h2 {
+    font-size: 10px;
+  }
+
+  .blog-content p {
+    font-size: 10px;
+  }
+}
+/* .blog1 {
+  margin-bottom: 20px;
+}
+
+.mainblog-container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.blog h2 {
-  font-size: 2em;
-  margin: 10px 0;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+.blog-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.blog p {
-  font-size: 1em;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-in-out 0.4s, transform 0.6s ease-in-out 0.4s;
+.blog-image {
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
 }
 
-.blog1.active {
-  opacity: 1;
-}
-
-.blog1.active .blog-image {
-  transform: scale(1.1);
-}
-
-.blog1.active .blog h2 {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.blog1.active .blog p {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (max-width: 1400px) {
-  .blog-image {
-    display: none;
-  }
+.blog-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+ 
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
-  .blog-container {
-    flex-direction: column;
-  }
-
   .blog-image {
-    position: static;
-    width: 100%;
-    margin-left: 0;
+    height: 250px;
   }
 
   .blog-content {
-    margin-right: 0;
     padding: 10px;
   }
-}
-
-/* Articles Container */
-/* .articles-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.article-card {
-  background-color: #fff;
-  width: calc(33.333% - 20px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.article-card:hover {
-  transform: translateY(-5px);
-}
-
-.article-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.article-content {
-  padding: 15px;
-  text-align: left;
-}
-
-.article-title {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.article-meta {
-  font-size: 14px;
-  color: #888;
 } */
 
 /* Article Detail */
