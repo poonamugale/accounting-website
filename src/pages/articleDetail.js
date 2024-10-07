@@ -8,10 +8,8 @@ import "./blogs.css";
 const ArticleDetail = () => {
   const { id } = useParams();
   const [article, setArticle] = useState(null);
-  const [paragraph, setParagraph] = useState("");
 
   useEffect(() => {
-    setParagraph(blogs.paragraph);
     const selectedArticle = blogs.articles.find(
       (article) => article.id === String(id)
     );
@@ -53,15 +51,23 @@ const ArticleDetail = () => {
         </div>
       </div>
 
-      {/* Article Content */}
       {article.content.map((section, index) => (
         <div className="articleDetail-content" key={index}>
           <h2>{section.heading}</h2>
-          <p>{section.paragraph}</p>
+
+          {section.paragraph &&
+            section.paragraph.map((para, i) => <p key={i}>{para}</p>)}
+
+          {section.list && (
+            <ul>
+              {section.list.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+          )}
         </div>
       ))}
     </div>
   );
 };
-
 export default ArticleDetail;
