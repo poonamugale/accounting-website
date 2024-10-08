@@ -84,6 +84,9 @@ const ContactForm = () => {
     address: "",
     message: "",
   });
+  const [isSent, setIsSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -95,8 +98,38 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add any logic here if needed
-    console.log("Form data collected:", formData);
+    setLoading(true);
+    setErrorMessage("");
+
+    emailjs
+      .send(
+        "service_9e0vub8",
+        "template_bx8mydt",
+        formData,
+        "a6-S0E1bIgVsromvy"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsSent(true);
+          setLoading(false);
+          setFormData({
+            email: "",
+            name: "",
+            address: "",
+            message: "",
+          });
+
+          setTimeout(() => {
+            setIsSent(false);
+          }, 3000);
+        },
+        (error) => {
+          console.log(error.text);
+          setErrorMessage("Failed to send message. Please try again.");
+          setLoading(false);
+        }
+      );
   };
 
   return (
@@ -161,9 +194,13 @@ const ContactForm = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="submit-btn">
-          SEND
+        <button type="submit" className="submit-btn" disabled={loading}>
+          {loading ? "Sending..." : "SEND"}
         </button>
+        {isSent && (
+          <p className="success-message">Your message has been sent!</p>
+        )}
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </form>
     </div>
   );
