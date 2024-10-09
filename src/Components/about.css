@@ -1,6 +1,6 @@
 .about-section {
-  padding: 0px 60px;
-  background-color: #f5f7fb;
+  /* padding: 20px; */
+  background-color: #ffffff;
 }
 
 .about-container {
@@ -13,14 +13,18 @@
 .image-container {
   position: relative;
   width: 100%;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 5%;
+  /* border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 5%; */
   overflow: hidden;
 }
 
 .image {
   width: 100%;
   height: 300px;
+}
+.about-label {
+  color: black;
+  text-align: left;
 }
 
 .aboutus-heading {

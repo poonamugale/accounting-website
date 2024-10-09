@@ -155,12 +155,12 @@ const Home = () => {
   );
 };
 const Section1 = () => {
-  const [stats, setStats] = useState([]);
+  // const [stats, setStats] = useState([]);
   const [imageUrl, setImageUrl] = useState("");
   const [paragraph, setParagraph] = useState("");
   const [heading, setHeading] = useState("");
   useEffect(() => {
-    setStats(home.stats || []);
+    // setStats(home.stats || []);
     setImageUrl(home.image);
     setParagraph(home.paragraph);
     setHeading(home.heading);
@@ -173,7 +173,7 @@ const Section1 = () => {
           <img src={imageUrl} alt="Assurance & Solutions" />
         </div>
         <div className="home-content">
-          <span className="home-label">About Kirtane & Pandit</span>
+          <span className="home-label">Nikhil Warankar & Co</span>
           <h2>{heading}</h2>
           <p>{paragraph}</p>
           <a className="learn-more-btn" href="/about">
@@ -182,7 +182,7 @@ const Section1 = () => {
         </div>
       </div>
 
-      <div className="stats-section">
+      {/* <div className="stats-section">
         {(() => {
           const statItems = [];
           for (let i = 0; i < stats.length; i++) {
@@ -196,7 +196,7 @@ const Section1 = () => {
           }
           return statItems;
         })()}
-      </div>
+      </div> */}
     </div>
   );
 };

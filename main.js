@@ -15,7 +15,7 @@ import ArticleDetail from "./src/pages/articleDetail";
 import Section3 from "./src/Components/home";
 import ServiceDetail from "./src/pages/serviceDetail";
 
-import AllServices from "./src/pages/ServicesAll";
+import AllServices from "./src/pages/allServices";
 import Careers from "./src/Components/careers";
 import ContactPage from "./src/Components/contact";
 // const Main = () => {

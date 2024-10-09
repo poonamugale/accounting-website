@@ -41,17 +41,17 @@ const Careers = () => {
           alt="About Us"
           className="image"
         />
-        <div className="aboutus-heading">
+        {/* <div className="aboutus-heading">
           <Link to="/" className="aboutus-heading-link">
             Home
           </Link>
           &gt; Careers
-        </div>
+        </div> */}
       </div>
       <div className="apply-container">
         <h2>Why you should consider applying</h2>
         <p>
-          At Kirtane & Pandit, we truly care for our employees and make sure
+          At Nikhil Warankar & Co, we truly care for our employees and make sure
           that they experience the best of culture, and help them in their
           professional development. Join our team. We look forward to meeting
           extraordinary people with an incredible passion & hunger to learn new.

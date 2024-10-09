@@ -18,9 +18,11 @@ const Footer = () => {
     <>
       <footer className="footer">
         <div className="footer-section">
-          <h4>{footerData.mainHeader}</h4>
-          <p>{footerData.subHeader}</p>
-          <p>{footerData.description}</p>
+          <div className="footer-header">
+            <h4>{footerData.mainHeader}</h4>
+            <p>{footerData.subHeader}</p>
+            <p>{footerData.description}</p>
+          </div>
           <div className="social-links">
             <a href="https://linkedin.com">
               <i className="icons">
@@ -39,17 +41,17 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li className="footer-link">
-              <Link to="/publications">Publications</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li className="footer-link">
-              <Link to="/about">About Us</Link>
+              <Link to="/blogs">Blogs</Link>
             </li>
             <li className="footer-link">
               <Link to="/careers">Careers</Link>
             </li>
-            <li className="footer-link">
+            {/* <li className="footer-link">
               <Link to="/alumni">Alumni</Link>
-            </li>
+            </li> */}
             <li className="footer-link">
               <Link to="/contact">Contact</Link>
             </li>
@@ -60,23 +62,23 @@ const Footer = () => {
           <h4>Services</h4>
           <ul>
             <li className="footer-link">
-              <Link to="/Audit & Assurance">Audit & Assurance</Link>
+              <Link to="/Direct Taxes">Direct Taxes</Link>
             </li>
             <li className="footer-link">
-              <Link to="/Tax">Tax</Link>
+              <Link to="/Indirect Taxes">Indirect Taxes</Link>
             </li>
             <li className="footer-link">
-              <Link to="/BFSI & NBFCs">BFSI & NBFCs</Link>
+              <Link to="/Limited-Review">Limited Review</Link>
             </li>
             <li className="footer-link">
-              <Link to="/Consulting & Advisory">Consulting & Advisory</Link>
+              <Link to="/Project-Finances">Project Finances</Link>
             </li>
           </ul>
         </div>
 
-        <div className="footer-section">
+        {/* <div className="footer-section">
           <img src={footerData.imageSrc} alt="Locations in India" />{" "}
-        </div>
+        </div> */}
       </footer>
 
       <div className="footer2">

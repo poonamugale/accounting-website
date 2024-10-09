@@ -1,13 +1,16 @@
 {
   "heading": "About Us",
   "paragraphs": [
-    "Kirtane & Pandit is an Accounting, Auditing & Consulting firm with a well-established network of financial experts across India. Our motto, 'Step ahead, Always,' reflects our value-added approach to delivering sound financial solutions while we partner with you in your journey of growth.",
-    "With our extensive experience of 65+ years, we deliver a wide range of professional services in the areas of Assurance, Accounting & Advisory to reputed & listed companies from various industries across the globe.",
-    "As a registered firm with ICAI and a member of PCAOB, SEC, USA, we uphold the highest standards of quality and compliance. Our ambitious approach and technology-led environment empower our employees to think differently and explore emerging areas.",
-    "With seven regional offices strategically located throughout India, we provide prompt and personalized assistance wherever you are. Our dedicated workforce of employees across the nation is passionate about excellence and relentlessly pursues your success.",
-    "Additionally, with a global footprint of over 15 countries, we are decorated to support clients with international operations. Leveraging our extensive network, we offer seamless cross-border solutions, ensuring compliance with local regulations and optimizing your global ventures.",
-    "At Kirtane & Pandit, we step beyond traditional accounting services. We are trusted partners who understand the intricacies of your industry. By combining deep industry knowledge with cutting-edge technology and innovative strategies, we deliver superior results that position you ahead of the competition.",
-    "Experience the difference while working with a firm that understands your unique business needs and supports your journey toward success."
+    "M/s Nikhil Warankar & Co. is a multidisciplinary Chartered Accountant (CA) firm specializing in providing comprehensive advisory services in the areas of Direct Taxes, Indirect Taxes, Statutory, Internal Auditing, and Project Finances. With a strong commitment to ethical practices, professional responsibilities, and delivering high-quality services, we strive to add value to our clients' businesses.",
+    "Our team at M/s Nikhil Warankar & Co. comprises highly skilled and experienced professionals who possess a deep understanding of the complex financial and regulatory landscape. We leverage our expertise to provide tailored solutions and strategic guidance to our clients, enabling them to navigate through the intricacies of taxation and financial management.",
+    "Services offered by M/s Nikhil Warankar & Co. include:",
+    "1. Direct Taxes",
+    "2. Indirect Taxes",
+    "3. Statutory and Internal Auditing",
+    "4. Limited Review",
+    "5. Project Finances",
+    "At M/s Nikhil Warankar & Co., we prioritize building strong client relationships based on trust, confidentiality, and integrity. We strive to understand our clients' unique needs and business objectives, enabling us to provide personalized solutions that drive success.",
+    "Our firm is committed to ongoing professional development and staying abreast of the latest industry trends and regulatory changes. This ensures that we provide our clients with up-to-date advice and guidance, keeping them well-informed and positioned for growth in an ever-evolving business landscape."
   ],
 
   "image1": "https://arizent.brightspotcdn.com/dims4/default/5eb04db/2147483647/strip/true/crop/569x395+0+0/resize/569x395!/quality/90/?url=https%3A%2F%2Fsource-media-brightspot.s3.us-east-1.amazonaws.com%2Fdb%2F35%2F1016abf249f5bda2714408737e49%2Fp17kr4vssu1qr46rg1as3ibli9u5.jpg",
@@ -49,5 +52,25 @@
       "description": "We uphold strong ethics, ensuring honest and ethical practices that build trust and foster long-term relationships."
     }
   ],
-  "statsList": "A Step Ahead, Always."
+  "statsList": "A Step Ahead, Always.",
+  "Data": [
+    { "name": "Construction", "icon": "FaIndustry" },
+    { "name": "Trading", "icon": "FaTruck" },
+    { "name": "Biotech", "icon": "FaMicroscope" },
+    { "name": "Agri Trading", "icon": "FaLeaf" },
+    { "name": "Surgical Equipments", "icon": "FaBriefcaseMedical" },
+    { "name": "Paints & Chemicals", "icon": "FaPaintBrush" },
+    { "name": "Real Estate Developer", "icon": "FaBuilding" },
+    { "name": "Mould & Moulding Parts", "icon": "FaTools" },
+    { "name": "Auto Components", "icon": "FaWrench" },
+    { "name": "Hospitality", "icon": "FaConciergeBell" },
+    { "name": "Auto Ancillary", "icon": "FaClipboardList" },
+    { "name": "Transport & Logistics", "icon": "FaTruckLoading" },
+    { "name": "Dairy", "icon": "FaUtensils" },
+    { "name": "Ready To Cook", "icon": "FaUtensils" }
+  ],
+  "Header": {
+    "heading": "Clients Spread",
+    "paragraph": " Nikhil Warankar & Co is a versatile professional services firm, offering a wide range of financial, legal, and advisory solutions to break do barriers so that our team can focus on what matters. With our expertise in diverse industries, we provide comprehensive and tailored services while working together with our clients to create products their customers love"
+  }
 }

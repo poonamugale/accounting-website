@@ -22,25 +22,23 @@ const About = () => {
           alt="About Us"
           className="image"
         />
-        <div className="aboutus-heading">
+        {/* <div className="aboutus-heading">
           <Link to="/" className="aboutus-heading-link">
             Home
           </Link>
           &gt; About Us
-        </div>
+        </div> */}
       </div>
       <div className="about-section">
         <div className="about-container">
-          <h1 className="about-label">{heading}</h1>
-          {(() => {
-            const paragraphArray = [];
-            for (let i = 0; i < paragraphs.length; i++) {
-              paragraphArray.push(<p key={i}>{paragraphs[i]}</p>);
-            }
-            return paragraphArray;
-          })()}
+          <h2 className="about-label">{heading}</h2>
+
+          {paragraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
       </div>
+
       <Section1 />
       <Section2 />
       <Section3 />
