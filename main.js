@@ -14,10 +14,14 @@ import Article from "./src/pages/articles";
 import ArticleDetail from "./src/pages/articleDetail";
 import Section3 from "./src/Components/home";
 import ServiceDetail from "./src/pages/serviceDetail";
-
 import AllServices from "./src/pages/allServices";
 import Careers from "./src/Components/careers";
 import ContactPage from "./src/Components/contact";
+import DirectTaxes from "./src/pages/directTaxes";
+import IndirectTaxes from "./src/pages/indirectTaxes";
+import StatutoryInternalAuditing from "./src/pages/statutoryInternalAuditing";
+import LimitedReview from "./src/pages/limitedReview";
+import ProjectFinances from "./src/pages/projectFinances";
 // const Main = () => {
 //   return (
 //     <>
@@ -113,6 +117,56 @@ const Main = () => {
             <>
               <Navbar />
               <ContactPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/services/direct-taxation"
+          element={
+            <>
+              <Navbar />
+              <DirectTaxes />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/services/indirect-taxation"
+          element={
+            <>
+              <Navbar />
+              <IndirectTaxes />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/services/Statutory and Internal Auditing"
+          element={
+            <>
+              <Navbar />
+              <StatutoryInternalAuditing />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/services/Limited-Review"
+          element={
+            <>
+              <Navbar />
+              <LimitedReview />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/services/Project-Finances"
+          element={
+            <>
+              <Navbar />
+              <ProjectFinances />
               <Footer />
             </>
           }
