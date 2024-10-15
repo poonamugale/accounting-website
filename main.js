@@ -22,6 +22,7 @@ import IndirectTaxes from "./src/pages/indirectTaxes";
 import StatutoryInternalAuditing from "./src/pages/statutoryInternalAuditing";
 import LimitedReview from "./src/pages/limitedReview";
 import ProjectFinances from "./src/pages/projectFinances";
+import ApplyJob from "./src/pages/careersApply";
 // const Main = () => {
 //   return (
 //     <>
@@ -110,6 +111,8 @@ const Main = () => {
             </>
           }
         />
+        <Route path="/apply/:title" element={<ApplyJob />} />
+
         <Route
           exact
           path="/contact"

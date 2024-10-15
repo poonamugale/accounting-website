@@ -10,9 +10,32 @@ import "./footer.css";
 
 const Footer = () => {
   const [footerData, setFooterData] = useState({});
+  const [showUpArrow, setShowUpArrow] = useState(false);
+
   useEffect(() => {
     setFooterData(home.footer);
+
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowUpArrow(true);
+      } else {
+        setShowUpArrow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
@@ -49,9 +72,6 @@ const Footer = () => {
             <li className="footer-link">
               <Link to="/careers">Careers</Link>
             </li>
-            {/* <li className="footer-link">
-              <Link to="/alumni">Alumni</Link>
-            </li> */}
             <li className="footer-link">
               <Link to="/contact">Contact</Link>
             </li>
@@ -76,9 +96,11 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* <div className="footer-section">
-          <img src={footerData.imageSrc} alt="Locations in India" />{" "}
-        </div> */}
+        {showUpArrow && (
+          <button className="up-arrow" onClick={scrollToTop}>
+            ↑
+          </button>
+        )}
       </footer>
 
       <div className="footer2">

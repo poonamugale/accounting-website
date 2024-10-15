@@ -72,5 +72,51 @@
   "Header": {
     "heading": "Clients Spread",
     "paragraph": " Nikhil Warankar & Co is a versatile professional services firm, offering a wide range of financial, legal, and advisory solutions to break do barriers so that our team can focus on what matters. With our expertise in diverse industries, we provide comprehensive and tailored services while working together with our clients to create products their customers love"
-  }
+  },
+
+  "introduction": {
+    "title": "Why you should consider applying",
+    "description": "At Nikhil Warankar & Co, we truly care for our employees and make sure that they experience the best of culture, and help them in their professional development. Join our team. We look forward to meeting extraordinary people with an incredible passion & hunger to learn new."
+  },
+
+  "careers": [
+    {
+      "icon": "FaDoorOpen",
+      "title": "Open Door Policy",
+      "description": "We come together wherever we are – across time zones, regions, offices, and screens. You will receive support from your teammates anytime and anywhere."
+    },
+    {
+      "icon": "FaBuilding",
+      "title": "Great Work Environment",
+      "description": "Our teams reflect the rich diversity of our world, with equitable access to opportunity for everyone. No matter where you come from."
+    },
+    {
+      "icon": "FaCogs",
+      "title": "Organizational Culture",
+      "description": "We believe in your freedom to work when and how you work best, to help us all thrive. Only freedom and independent work can bring out the best in you."
+    },
+    {
+      "icon": "FaUsers",
+      "title": "Stability of Workforce",
+      "description": "Knowing that there is real value to be gained from helping people to simplify whatever it is that they do and bring."
+    }
+  ],
+
+  "jobs": [
+    {
+      "title": "Audit Manager",
+      "responsibilities": "Preparing and maintaining audit budgets. Planning and directing company financial audits.",
+      "location": "Pune"
+    },
+    {
+      "title": "Business Development Associate (Finance)",
+      "responsibilities": "Identifying and targeting potential clients in various industries. Preparing presentations.",
+      "location": "Mumbai"
+    },
+    {
+      "title": "Audit Manager",
+      "responsibilities": "Planning and directing company financial audits. Leading and ensuring the audits are performed properly.",
+      "location": "Delhi"
+    }
+  ]
 }

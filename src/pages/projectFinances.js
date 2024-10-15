@@ -3,22 +3,21 @@ import "./tax.css";
 
 const ProjectFinances = () => {
   return (
-    <div className="service-container">
-      <h1>Project Finances</h1>
-      <p>
-        We assist in project finance by structuring financial solutions tailored
-        to your project needs, ensuring sustainable and successful project
-        execution.
-      </p>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYm4Dy5WcJCehgtx-EmySIoxVDke0cNeNYQ&s"
-        alt="Project Finances"
-      />
-      <h2>Services Offered:</h2>
-      <ul>
-        <li>Project Financing Solutions</li>
-        <li>Financial Structuring</li>
-      </ul>
+    <div className="servicesList-mainContainer">
+      <div className="servicesList-container">
+        <img
+          src="https://media.licdn.com/dms/image/C4E12AQFfOPLgiwIshg/article-cover_image-shrink_600_2000/0/1520237986326?e=2147483647&v=beta&t=CQuemlgNFjKIUiUuLgDHg6pJdDNoGDybgsgw--8rv0M"
+          alt="Statutory and Internal Auditing"
+        />
+        <div className="servicesList-header">
+          <h6>ProjectFinances</h6>
+          <p>
+            We provide statutory and internal auditing services to assess the
+            accuracy of financial statements and compliance with applicable
+            laws, enhancing your business's transparency.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

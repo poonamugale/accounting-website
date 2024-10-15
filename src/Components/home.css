@@ -19,11 +19,6 @@
   width: 100%;
 }
 
-/* .slides-track {
-  display: flex;
-  transition: transform 0.9s ease-in-out;
-  will-change: transform;
-} */
 .slides-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -37,7 +32,7 @@
   color: white;
   width: 50%;
   height: auto;
-  /* padding: 20px; */
+
   border-radius: 8px;
   min-height: 250px;
   opacity: 1;
