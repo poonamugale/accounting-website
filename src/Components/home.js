@@ -325,11 +325,11 @@ const Section3 = () => {
           </div>
         ))}
       </div>
-      <div className="all-services-btn">
+      {/* <div className="all-services-btn">
         <Link to="/all-services" className="view-all-btn">
           View All Services
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

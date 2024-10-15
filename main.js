@@ -14,7 +14,7 @@ import Article from "./src/pages/articles";
 import ArticleDetail from "./src/pages/articleDetail";
 import Section3 from "./src/Components/home";
 import ServiceDetail from "./src/pages/serviceDetail";
-import AllServices from "./src/pages/allServices";
+// import AllServices from "./src/pages/allServices";
 import Careers from "./src/Components/careers";
 import ContactPage from "./src/Components/contact";
 import DirectTaxes from "./src/pages/directTaxes";
@@ -87,7 +87,7 @@ const Main = () => {
         />
 
         <Route path="/service/:title" element={<ServiceDetail />} />
-        <Route path="/all-services" element={<AllServices />} />
+        {/* <Route path="/all-services" element={<AllServices />} /> */}
         <Route path="/blogs" element={<Blogs />} />
         <Route exact path="/articles" component={<Article />} />
         <Route
@@ -111,7 +111,16 @@ const Main = () => {
             </>
           }
         />
-        <Route path="/apply/:title" element={<ApplyJob />} />
+        <Route
+          path="/apply/:title"
+          element={
+            <>
+              <Navbar />
+              <ApplyJob />
+              <Footer />
+            </>
+          }
+        />
 
         <Route
           exact
