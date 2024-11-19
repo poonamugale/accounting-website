@@ -82,10 +82,10 @@ const Footer = () => {
           <h4>Services</h4>
           <ul>
             <li className="footer-link">
-              <Link to="/Direct Taxes">Direct Taxes</Link>
+              <Link to="/services/direct-taxation">Direct Taxes</Link>
             </li>
             <li className="footer-link">
-              <Link to="/Indirect Taxes">Indirect Taxes</Link>
+              <Link to="/services/indirect-taxation">Indirect Taxes</Link>
             </li>
             <li className="footer-link">
               <Link to="/Limited-Review">Limited Review</Link>
