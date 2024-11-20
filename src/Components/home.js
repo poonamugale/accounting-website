@@ -181,7 +181,7 @@ const Section2 = () => {
   return (
     <section className="Section2">
       <div className="header-section">
-        <h2>{header.title}</h2>
+        <h2 className="heading">{header.title}</h2>
         <div className="divider" />
 
         <p>{header.paragraph}</p>
@@ -254,7 +254,7 @@ const Section3 = () => {
 
   return (
     <div className="services-container">
-      <h2 className="services-heading">Our Services</h2>
+      <h2 className="heading">Our Services</h2>
       <div className="services-page">
         {visibleServices.map((service) => (
           <div

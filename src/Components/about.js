@@ -31,7 +31,7 @@ const About = () => {
       </div>
       <div className="about-section">
         <div className="about-container">
-          <h2 className="about-label">{heading}</h2>
+          <h2 className="heading">{heading}</h2>
 
           {paragraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
@@ -45,6 +45,7 @@ const About = () => {
     </div>
   );
 };
+
 const Section1 = () => {
   const [imageUrl1, setImageUrl1] = useState("");
   const [imageUrl2, setImageUrl2] = useState("");
@@ -69,8 +70,8 @@ const Section1 = () => {
           <img src={imageUrl1} alt="Assurance & Solutions" />
         </div>
         <div className="hightlight-content">
-          <span className="highlight-label">Highlights</span>
-          <h2>{pageheading}</h2>
+          <span className="hightlight-label">Highlights</span>
+          <h3>{pageheading}</h3>
           <ul className="highlights-list">
             {(() => {
               let items = [];
@@ -88,7 +89,7 @@ const Section1 = () => {
           <img src={imageUrl2} alt="Assurance & Solutions" />
         </div>
         <div className="hightlight-content">
-          <h2>{subheading}</h2>
+          <h3>{subheading}</h3>
           <p>{paragraph}</p>
         </div>
       </div>
@@ -107,12 +108,12 @@ const Section2 = () => {
   return (
     <div className="about-container">
       <div className="about-vision">
-        <h2>Vision</h2>
+        <h2 className="heading">Vision</h2>
         <p>{vision}</p>
       </div>
 
       <div className="about-mission">
-        <h2>Mission</h2>
+        <h2 className="heading">Mission</h2>
         <div className="mission-items">
           <div className="mission-column">
             {(() => {

@@ -47,6 +47,9 @@
 }
 .heading {
   font-size: 30px;
+  color: #ff6600;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .learn-more {
   background: #c86213;
@@ -167,6 +170,9 @@
   color: #555;
   line-height: 1.6;
   margin: 0 auto 1.5rem;
+  /* line-height: 24px !important;
+  font-size: 16px;
+  margin-bottom: 15px; */
 }
 
 /* .learn-more {
@@ -246,12 +252,12 @@
   padding: 0 20px;
 }
 
-.header-section h2 {
+/* .header-section h2 {
   font-size: 35px;
   color: #ff6600;
   font-weight: bold;
   margin-bottom: 10px;
-}
+} */
 .divider {
   width: 80px;
   height: 3px;
