@@ -48,7 +48,7 @@ const ClientSpread = () => {
   return (
     <div className="client-container">
       <div className="client-content">
-        <h1>{data.heading}</h1>
+        <h2 className="heading">{data.heading}</h2>
         <p>{data.paragraph}</p>
 
         <div className="industries-container">

@@ -48,6 +48,31 @@
 
   "services": [
     {
+      "title": "Direct Taxes",
+      "description": "Our Direct Tax services include comprehensive planning and compliance for various tax obligations. We help businesses navigate complex regulations to optimize their tax positions.",
+      "image": "https://adca.in/images/services/2s.jpg"
+    },
+    {
+      "title": "Indirect Taxes",
+      "description": "Our Indirect Tax services cover Goods and Services Tax (GST) compliance, advisory, and litigation support to ensure that businesses are compliant with indirect tax regulations.",
+      "image": "https://www.papaelias.com/images/catheaders/tax.jpg"
+    },
+    {
+      "title": "Statutory and Internal Auditing",
+      "description": "We provide statutory and internal auditing services to assess the accuracy of financial statements and compliance with applicable laws, enhancing your business's transparency.",
+      "image": "https://s7d9.scene7.com/is/image/roberthalfintl/Internal-Auditor-FA-09-13-2017:Large-1x?fmt=webp-alpha"
+    },
+    {
+      "title": "Limited Review",
+      "description": "Our Limited Review services offer a quick assessment of financial statements for interim periods, providing stakeholders with assurance on financial health without a full audit.",
+      "image": "https://charteredaccountantsworldwide.com/wp-content/uploads/2024/09/Accountancy-1024x576.jpg"
+    },
+    {
+      "title": "Project Finances",
+      "description": "We assist in project finance by structuring financial arrangements and advising on financial strategy, ensuring the success of your projects.",
+      "image": "https://projectfinance101.wordpress.com/wp-content/uploads/2020/05/project-finance-and-disbursement-.jpg"
+    },
+    {
       "title": "Auditing & Assurance Services",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHTWrnXM-sHYztTkye4PBNw4Jg2OkJRZnp8CYuk-bK17kahCOLjoa2M50org&s",
       "description": "We provide various Auditing & Assurance Services to Companies and Firms.",

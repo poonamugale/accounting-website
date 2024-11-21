@@ -12,8 +12,12 @@ const ServiceDetail = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    const formatTitleForComparison = (title) => {
+      return title.toLowerCase().replace(/\s+/g, "-");
+    };
+
     const selectedService = home.services.find(
-      (service) => service.title === title
+      (service) => formatTitleForComparison(service.title) === title
     );
 
     if (selectedService) {
@@ -33,13 +37,15 @@ const ServiceDetail = () => {
   }
 
   return (
-    <div className="service-details">
-      <div className="service-images">
+    <div className="servicesList-mainContainer">
+      <div className="servicesList-container">
         <img src={service.image} alt={service.title} />
-        <p>{service.description}</p>
+        <div className="servicesList-header">
+          <h2 className="heading">{service.title}</h2>
+          <p>{service.description}</p>
+        </div>
       </div>
     </div>
   );
 };
-
 export default ServiceDetail;

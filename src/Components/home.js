@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import Navbar from "./navbar";
 import React from "react";
 import home from "../../home.json";
+import servicesPages from "../pages/servicesPages.json";
 import { Link } from "react-router-dom";
 import { FiCheckCircle } from "react-icons/fi";
 import {
@@ -136,27 +137,12 @@ const Section1 = () => {
           <span className="home-label">Nikhil Warankar & Co</span>
           <h3>{heading}</h3>
           <p>{paragraph}</p>
-          <a className="learn-more" href="/about">
+
+          <Link to="/about" className="learn-more">
             Learn More <span className="arrow">→</span>
-          </a>
+          </Link>
         </div>
       </div>
-
-      {/* <div className="stats-section">
-        {(() => {
-          const statItems = [];
-          for (let i = 0; i < stats.length; i++) {
-            const stat = stats[i];
-            statItems.push(
-              <div key={i} className="stat-item">
-                <h1>{stat.value}</h1>
-                <p>{stat.label}</p>
-              </div>
-            );
-          }
-          return statItems;
-        })()}
-      </div> */}
     </div>
   );
 };
@@ -252,6 +238,10 @@ const Section3 = () => {
     setVisibleServices(home.services.slice(0, 3));
   }, []);
 
+  const formatTitleForURL = (title) => {
+    return title.toLowerCase().replace(/\s+/g, "-");
+  };
+
   return (
     <div className="services-container">
       <h2 className="heading">Our Services</h2>
@@ -263,7 +253,7 @@ const Section3 = () => {
             style={{ backgroundImage: `url(${service.image})` }}
           >
             <div className="servicescard-header">
-              <Link to={`/service/${service.title}`}>
+              <Link to={`/services/${formatTitleForURL(service.title)}`}>
                 <h2>{service.title}</h2>
               </Link>
             </div>

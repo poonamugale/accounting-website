@@ -17,11 +17,6 @@ import ServiceDetail from "./src/pages/serviceDetail";
 // import AllServices from "./src/pages/allServices";
 import Careers from "./src/Components/careers";
 import ContactPage from "./src/Components/contact";
-import DirectTaxes from "./src/pages/directTaxes";
-import IndirectTaxes from "./src/pages/indirectTaxes";
-import StatutoryInternalAuditing from "./src/pages/statutoryInternalAuditing";
-import LimitedReview from "./src/pages/limitedReview";
-import ProjectFinances from "./src/pages/projectFinances";
 import ApplyJob from "./src/pages/careersApply";
 // const Main = () => {
 //   return (
@@ -86,12 +81,21 @@ const Main = () => {
           }
         />
 
-        <Route path="/service/:title" element={<ServiceDetail />} />
+        <Route
+          path="/services/:title"
+          element={
+            <>
+              <Navbar />
+              <ServiceDetail />
+              <Footer />
+            </>
+          }
+        />
         {/* <Route path="/all-services" element={<AllServices />} /> */}
         <Route path="/blogs" element={<Blogs />} />
         <Route exact path="/articles" component={<Article />} />
         <Route
-          path="/articles/:id"
+          path="/articles/:id/:title"
           element={
             <>
               <Navbar />
@@ -129,56 +133,6 @@ const Main = () => {
             <>
               <Navbar />
               <ContactPage />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/services/direct-taxation"
-          element={
-            <>
-              <Navbar />
-              <DirectTaxes />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/services/indirect-taxation"
-          element={
-            <>
-              <Navbar />
-              <IndirectTaxes />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/services/Statutory and Internal Auditing"
-          element={
-            <>
-              <Navbar />
-              <StatutoryInternalAuditing />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/services/Limited-Review"
-          element={
-            <>
-              <Navbar />
-              <LimitedReview />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/services/Project-Finances"
-          element={
-            <>
-              <Navbar />
-              <ProjectFinances />
               <Footer />
             </>
           }

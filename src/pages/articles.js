@@ -10,12 +10,17 @@ const Article = () => {
   useEffect(() => {
     setArticles(blogs.articles);
   }, []);
-
+  const convertTitleToURL = (title) => {
+    return title.replace(/\s+/g, "-").toLowerCase();
+  };
   return (
     <div className="articles-container">
       {articles.map((article, i) => (
         <div className="article-card" key={i}>
-          <Link to={`/articles/${i}`} className="article-image-link">
+          <Link
+            to={`/articles/${article.id}/${convertTitleToURL(article.title)}`}
+            className="article-image-link"
+          >
             <img
               className="article-image"
               src={article.image}
@@ -23,7 +28,10 @@ const Article = () => {
             />
           </Link>
           <div className="article-content">
-            <Link to={`/articles/${i}`} className="article-title-link">
+            <Link
+              to={`/articles/${article.id}/${convertTitleToURL(article.title)}`}
+              className="article-title-link"
+            >
               <h3 className="article-title">{article.title}</h3>
             </Link>
             <p className="article-meta">
@@ -35,4 +43,5 @@ const Article = () => {
     </div>
   );
 };
+
 export default Article;
