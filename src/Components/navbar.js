@@ -91,13 +91,13 @@ const Navbar = () => {
               Gallery
             </span>
           </li>
+          <button
+            className="btn"
+            onClick={() => handleRefreshOrNavigate("/contact")}
+          >
+            Contact
+          </button>
         </ul>
-        <button
-          className="btn"
-          onClick={() => handleRefreshOrNavigate("/contact")}
-        >
-          Contact
-        </button>
       </div>
       <div className="hamburger-menu" onClick={toggleMobileMenu}>
         {isMobile ? <FaTimes /> : <FaBars />}

@@ -242,6 +242,16 @@
   color: rgb(26, 23, 23);
   transition: color 0.3s ease;
 }
+.dropdown {
+  font-size: 16px;
+  color: #071920;
+  line-height: 23px;
+  display: block;
+  padding: 10px 0px 10px 0px;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
 
 .nav-links ul li span:hover {
   color: #ffcc00;
@@ -252,11 +262,11 @@
   color: #0e0e0e;
   line-height: 23px;
   display: block;
-  padding: 28px 18px 28px 15px;
+  /* padding: 28px 18px 28px 15px; */
   text-decoration: none;
   position: relative;
   cursor: pointer;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   width: auto;
   text-decoration: none;
 }
@@ -344,7 +354,7 @@
 .btn {
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px;
+  padding: 10px;
   font-size: 16px;
   background: #054c7d;
   border: none;
@@ -361,6 +371,7 @@
 
   .nav-links-mobile {
     transform: translateX(100%);
+    align-items: center;
   }
 
   .nav-links-mobile.active {
@@ -371,5 +382,8 @@
     position: relative;
     display: block;
     top: 0;
+  }
+  .btn {
+    margin: 20px auto;
   }
 }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel index.html --no-cache --port 3002",
+    "start": "parcel index.html --no-cache --port 3003",
     "build": "parcel build index.html",
     "test": "jest"
   },
