@@ -5,7 +5,6 @@ import { useLocation, Link, useNavigate } from "react-router-dom";
 import home from "../../home.json";
 import "./navbar.css";
 
-/*usefull code*/
 // const Navbar = () => {
 //   const [isMobile, setIsMobile] = useState(false);
 //   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
@@ -41,14 +40,17 @@ import "./navbar.css";
 //   return (
 //     <nav className="navbar">
 //       <img src={require("../../logo.jpeg")} alt="Logo" className="logo" />
-//       <div className={isMobile ? "nav-links-mobile" : "nav-links"}>
+//       <div className={`nav-links ${isMobile ? "nav-links-mobile active" : ""}`}>
 //         <ul>
 //           <li className="dropdown">
 //             <span onClick={() => handleRefreshOrNavigate("/")}>Home</span>
 //           </li>
 //           <li className="dropdown">
 //             <span onClick={handleAboutToggle}>
-//               About Us <IoIosArrowDown className="arrow-icon" />
+//               About Us{" "}
+//               <IoIosArrowDown
+//                 className={`arrow-icon ${aboutDropdownOpen ? "open" : ""}`}
+//               />
 //             </span>
 //             {aboutDropdownOpen && (
 //               <ul className="dropdown-menu">
@@ -92,13 +94,13 @@ import "./navbar.css";
 //               Gallery
 //             </span>
 //           </li>
+//           <button
+//             className="btn"
+//             onClick={() => handleRefreshOrNavigate("/contact")}
+//           >
+//             Contact
+//           </button>
 //         </ul>
-//         <button
-//           className="btn"
-//           onClick={() => handleRefreshOrNavigate("/contact")}
-//         >
-//           Contact
-//         </button>
 //       </div>
 //       <div className="hamburger-menu" onClick={toggleMobileMenu}>
 //         {isMobile ? <FaTimes /> : <FaBars />}
@@ -109,15 +111,13 @@ import "./navbar.css";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [hoveredDropdown, setHoveredDropdown] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
 
   const toggleMobileMenu = () => {
     setIsMobile(!isMobile);
-    setAboutDropdownOpen(false);
-    setServicesDropdownOpen(false);
+    setHoveredDropdown(null);
   };
 
   const handleRefreshOrNavigate = (path) => {
@@ -129,16 +129,6 @@ const Navbar = () => {
     setIsMobile(false);
   };
 
-  const handleAboutToggle = () => {
-    setAboutDropdownOpen(!aboutDropdownOpen);
-    setServicesDropdownOpen(false);
-  };
-
-  const handleServicesToggle = () => {
-    setServicesDropdownOpen(!servicesDropdownOpen);
-    setAboutDropdownOpen(false);
-  };
-
   return (
     <nav className="navbar">
       <img src={require("../../logo.jpeg")} alt="Logo" className="logo" />
@@ -147,14 +137,20 @@ const Navbar = () => {
           <li className="dropdown">
             <span onClick={() => handleRefreshOrNavigate("/")}>Home</span>
           </li>
-          <li className="dropdown">
-            <span onClick={handleAboutToggle}>
+          <li
+            className="dropdown"
+            onMouseEnter={() => setHoveredDropdown("about")}
+            onMouseLeave={() => setHoveredDropdown(null)}
+          >
+            <span>
               About Us{" "}
               <IoIosArrowDown
-                className={`arrow-icon ${aboutDropdownOpen ? "open" : ""}`}
+                className={`arrow-icon ${
+                  hoveredDropdown === "about" ? "open" : ""
+                }`}
               />
             </span>
-            {aboutDropdownOpen && (
+            {hoveredDropdown === "about" && (
               <ul className="dropdown-menu">
                 <li onClick={() => handleRefreshOrNavigate("/about")}>
                   About Nikhil Warankar & Co
@@ -165,14 +161,20 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-          <li className="dropdown">
-            <span onClick={handleServicesToggle}>
+          <li
+            className="dropdown"
+            onMouseEnter={() => setHoveredDropdown("services")}
+            onMouseLeave={() => setHoveredDropdown(null)}
+          >
+            <span>
               Services{" "}
               <IoIosArrowDown
-                className={`arrow-icon ${servicesDropdownOpen ? "open" : ""}`}
+                className={`arrow-icon ${
+                  hoveredDropdown === "services" ? "open" : ""
+                }`}
               />
             </span>
-            {servicesDropdownOpen && (
+            {hoveredDropdown === "services" && (
               <ul className="dropdown-menu">
                 {home.services.slice(0, 5).map((service) => (
                   <li key={service.title}>
@@ -210,5 +212,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
