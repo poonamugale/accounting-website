@@ -7,13 +7,15 @@ import { CiLinkedin, CiFacebook } from "react-icons/ci";
 import React from "react";
 import home from "../../home.json";
 import "./footer.css";
-
+import servicesPages from "../pages/servicesPages.json";
 const Footer = () => {
   const [footerData, setFooterData] = useState({});
   const [showUpArrow, setShowUpArrow] = useState(false);
+  const [services, setServices] = useState([]);
 
   useEffect(() => {
     setFooterData(home.footer);
+    setServices(servicesPages.taxes);
 
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -79,22 +81,31 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h4>Services</h4>
+          <h4>Our Services</h4>
           <ul>
-            <li className="footer-link">
-              <Link to="/services/direct-taxation">Direct Taxes</Link>
-            </li>
-            <li className="footer-link">
-              <Link to="/services/indirect-taxation">Indirect Taxes</Link>
-            </li>
-            <li className="footer-link">
-              <Link to="/Limited-Review">Limited Review</Link>
-            </li>
-            <li className="footer-link">
-              <Link to="/Project-Finances">Project Finances</Link>
-            </li>
+            {home.services.slice(0, 5).map((service, index) => (
+              <li className="footer-link" key={index}>
+                <Link
+                  to={`/services/${service.title
+                    .toLowerCase()
+                    .replace(/ /g, "-")}`}
+                >
+                  {service.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
+        {/* <div className="footer-section">
+          <h4>Services</h4>
+          <ul>
+            {services.map((service) => (
+              <li key={service.name} className="footer-link">
+                <Link to={service.path}>{service.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </div> */}
 
         {showUpArrow && (
           <button className="up-arrow" onClick={scrollToTop}>

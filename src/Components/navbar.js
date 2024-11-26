@@ -176,6 +176,35 @@ const Navbar = () => {
             </span>
             {hoveredDropdown === "services" && (
               <ul className="dropdown-menu">
+                {home.services.slice(0, 5).map((service, index) => (
+                  <li key={index}>
+                    <Link
+                      to={`/services/${service.title
+                        .toLowerCase()
+                        .replace(/ /g, "-")}`}
+                    >
+                      {service.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+          {/* <li
+            className="dropdown"
+            onMouseEnter={() => setHoveredDropdown("services")}
+            onMouseLeave={() => setHoveredDropdown(null)}
+          >
+            <span>
+              Services{" "}
+              <IoIosArrowDown
+                className={`arrow-icon ${
+                  hoveredDropdown === "services" ? "open" : ""
+                }`}
+              />
+            </span>
+            {hoveredDropdown === "services" && (
+              <ul className="dropdown-menu">
                 {home.services.slice(0, 5).map((service) => (
                   <li key={service.title}>
                     <Link
@@ -189,7 +218,7 @@ const Navbar = () => {
                 ))}
               </ul>
             )}
-          </li>
+          </li> */}
           <li className="dropdown">
             <span onClick={() => handleRefreshOrNavigate("/blogs")}>Blogs</span>
           </li>

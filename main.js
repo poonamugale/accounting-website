@@ -82,7 +82,7 @@ const Main = () => {
         />
 
         <Route
-          path="/services/:title"
+          path="/services/:serviceTitle"
           element={
             <>
               <Navbar />
