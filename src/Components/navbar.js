@@ -131,7 +131,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src={require("../../logo.jpeg")} alt="Logo" className="logo" />
+      <img src={require("../../mainlogo.png")} alt="Logo" className="logo" />
       <div className={`nav-links ${isMobile ? "nav-links-mobile active" : ""}`}>
         <ul>
           <li className="dropdown">
@@ -190,35 +190,6 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-          {/* <li
-            className="dropdown"
-            onMouseEnter={() => setHoveredDropdown("services")}
-            onMouseLeave={() => setHoveredDropdown(null)}
-          >
-            <span>
-              Services{" "}
-              <IoIosArrowDown
-                className={`arrow-icon ${
-                  hoveredDropdown === "services" ? "open" : ""
-                }`}
-              />
-            </span>
-            {hoveredDropdown === "services" && (
-              <ul className="dropdown-menu">
-                {home.services.slice(0, 5).map((service) => (
-                  <li key={service.title}>
-                    <Link
-                      to={`/services/${service.title
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")}`}
-                    >
-                      {service.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li> */}
           <li className="dropdown">
             <span onClick={() => handleRefreshOrNavigate("/blogs")}>Blogs</span>
           </li>
@@ -227,12 +198,14 @@ const Navbar = () => {
               Gallery
             </span>
           </li>
-          <button
-            className="btn"
-            onClick={() => handleRefreshOrNavigate("/contact")}
-          >
-            Contact
-          </button>
+          <li>
+            <button
+              className="btn"
+              onClick={() => handleRefreshOrNavigate("/contact")}
+            >
+              Contact
+            </button>
+          </li>
         </ul>
       </div>
       <div className="hamburger-menu" onClick={toggleMobileMenu}>
