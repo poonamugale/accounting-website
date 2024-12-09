@@ -206,3 +206,121 @@ p {
 .submit-button:hover {
   background-color: #0056b3;
 }
+@media (max-width: 768px) {
+  .apply-container {
+    padding: 30px;
+  }
+
+  .apply-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .apply-container p {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .reasons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .reason-card {
+    width: 100%;
+  }
+
+  .career-opportunities {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .career-header {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .job-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .job-info {
+    max-width: 100%;
+  }
+
+  .job-meta {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .apply-button {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .main-container {
+    padding: 20px;
+  }
+
+  .apply-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-header {
+    font-size: 20px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .career-header {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .job-card {
+    padding: 10px;
+  }
+
+  .apply-form {
+    padding: 15px;
+  }
+
+  .form-header {
+    font-size: 18px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
